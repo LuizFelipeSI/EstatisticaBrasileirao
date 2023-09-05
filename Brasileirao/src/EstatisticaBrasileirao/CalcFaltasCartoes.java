@@ -41,8 +41,8 @@ public class CalcFaltasCartoes implements CalculoEstatisticas{
     @Override
     public String calcular(Jogo jogo) {
         return "Total de Faltas: " + getTotalFaltas(jogo) + System.lineSeparator() +
-                "O time mandante teve " + getPorcentagemFaltasTimeMandante(jogo) + "% das faltas do jogo" + System.lineSeparator() +
-                "O time visitante teve " + getPorcentagemFaltasTimeVisitante(jogo) + "% das faltas do jogo" + System.lineSeparator() +
+                "O time mandante teve " + String.format("%.2f", getPorcentagemFaltasTimeMandante(jogo)) + "% das faltas do jogo" + System.lineSeparator() +
+                "O time visitante teve " + String.format("%.2f", getPorcentagemFaltasTimeVisitante(jogo)) + "% das faltas do jogo" + System.lineSeparator() +
                 "Total de cartões amarelos do time visitante: " + this.getTotalCartoesAmarelosTimeVisitante(jogo) + System.lineSeparator() +
                 "Total de cartões vermelhos do time visitante: " + this.getTotalCartoesVermelhosTimeVisitante(jogo) + System.lineSeparator() +
                 "Total de cartões amarelos do time mandante: " + this.getTotalCartoesAmarelosTimeMandante(jogo) + System.lineSeparator() +

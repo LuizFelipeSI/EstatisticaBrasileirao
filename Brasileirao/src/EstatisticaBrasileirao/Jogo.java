@@ -6,12 +6,12 @@ public class Jogo {
 	private int golsTimeMandante;
 	private int chutesAGolTimeVisitante;
 	private int chutesAGolTimeMandante;
-	private int posseBolaTimeVisitanteDefesaEmMin;
-	private int posseBolaTimeVisitanteAtaqueEmMin;
-	private int posseBolaTimeMandanteDefesaEmMin;
-	private int posseBolaTimeMandanteAtaqueEmMin;
-	private int tempoTotalBolaRolandoEmMin;
-	private int tempoTotalJogoEmMin;
+	private double posseBolaTimeVisitanteDefesaEmMin;
+	private double posseBolaTimeVisitanteAtaqueEmMin;
+	private double posseBolaTimeMandanteDefesaEmMin;
+	private double posseBolaTimeMandanteAtaqueEmMin;
+	private double tempoTotalBolaRolandoEmMin;
+	private double tempoTotalJogoEmMin;
 	private int faltasTimeVisitante;
 	private int cartoesAmarelosVisitante;
 	private int cartoesVermelhosVisitante;
@@ -35,27 +35,27 @@ public class Jogo {
 		return chutesAGolTimeMandante;
 	}
 	
-	public int getPosseBolaTimeVisitanteDefesaEmMin() {
+	public double getPosseBolaTimeVisitanteDefesaEmMin() {
 		return posseBolaTimeVisitanteDefesaEmMin;
 	}
 	
-	public int getPosseBolaTimeVisitanteAtaqueEmMin() {
+	public double getPosseBolaTimeVisitanteAtaqueEmMin() {
 		return posseBolaTimeVisitanteAtaqueEmMin;
 	}
 	
-	public int getPosseBolaTimeMandanteDefesaEmMin() {
+	public double getPosseBolaTimeMandanteDefesaEmMin() {
 		return posseBolaTimeMandanteDefesaEmMin;
 	}
 	
-	public int getPosseBolaTimeMandanteAtaqueEmMin() {
+	public double getPosseBolaTimeMandanteAtaqueEmMin() {
 		return posseBolaTimeMandanteAtaqueEmMin;
 	}
 	
-	public int getTempoTotalBolaRolandoEmMin() {
+	public double getTempoTotalBolaRolandoEmMin() {
 		return tempoTotalBolaRolandoEmMin;
 	}
 	
-	public int getTempoTotalJogoEmMin() {
+	public double getTempoTotalJogoEmMin() {
 		return tempoTotalJogoEmMin;
 	}
 	
@@ -83,12 +83,11 @@ public class Jogo {
 	}
 
 	public Jogo(int golsTimeVisitante, int golsTimeMandante, int chutesAGolTimeVisitante, int chutesAGolTimeMandante,
-			int posseBolaTimeVisitanteDefesaEmMin, int posseBolaTimeVisitanteAtaqueEmMin,
-			int posseBolaTimeMandanteDefesaEmMin, int posseBolaTimeMandanteAtaqueEmMin, int tempoTotalBolaRolandoEmMin,
-			int tempoTotalJogoEmMin, int faltasTimeVisitante, int cartoesAmarelosVisitante,
+				double posseBolaTimeVisitanteDefesaEmMin, double posseBolaTimeVisitanteAtaqueEmMin,
+				double posseBolaTimeMandanteDefesaEmMin, double posseBolaTimeMandanteAtaqueEmMin, double tempoTotalBolaRolandoEmMin,
+				double tempoTotalJogoEmMin, int faltasTimeVisitante, int cartoesAmarelosVisitante,
 			int cartoesVermelhosVisitante, int faltasTimeMandante, int cartoesAmarelosMandante,
 			int cartoesVermelhosMandante) {
-		super();
 		this.golsTimeVisitante = golsTimeVisitante;
 		this.golsTimeMandante = golsTimeMandante;
 		this.chutesAGolTimeVisitante = chutesAGolTimeVisitante;

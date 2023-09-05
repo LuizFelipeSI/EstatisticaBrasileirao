@@ -25,11 +25,11 @@ public class CalcTempoJogo implements CalculoEstatisticas{
     @Override
     public String calcular(Jogo jogo) {
 
-        return "A bola ficou rolando por " + getTempoTotalBolaRolandoEmPorcentagem(jogo) + "% do tempo de jogo" + System.lineSeparator() +
-                "O time mandante ficou " + getPosseBolaTimeMandanteDefesaEmPorcentagem(jogo) + "% do tempo de jogo na defesa" + System.lineSeparator() +
-                "O time mandante ficou " + getPosseBolaTimeMandanteAtaqueEmPorcentagem(jogo) + "% do tempo de jogo no ataque" + System.lineSeparator() +
-                "O time visitante ficou " + getPosseBolaTimeVisitanteDefesaEmPorcentagem(jogo) + "% do tempo de jogo na defesa" + System.lineSeparator() +
-                "O time visitante ficou " + getPosseBolaTimeVisitanteAtaqueEmPorcentagem(jogo) + "% do tempo de jogo no ataque" + System.lineSeparator();
+        return "A bola ficou rolando por " + String.format("%.2f", getTempoTotalBolaRolandoEmPorcentagem(jogo)) + "% do tempo de jogo" + System.lineSeparator() +
+                "O time mandante ficou " + String.format("%.2f", getPosseBolaTimeMandanteDefesaEmPorcentagem(jogo)) + "% do tempo de jogo na defesa" + System.lineSeparator() +
+                "O time mandante ficou " + String.format("%.2f", getPosseBolaTimeMandanteAtaqueEmPorcentagem(jogo)) + "% do tempo de jogo no ataque" + System.lineSeparator() +
+                "O time visitante ficou " + String.format("%.2f", getPosseBolaTimeVisitanteDefesaEmPorcentagem(jogo)) + "% do tempo de jogo na defesa" + System.lineSeparator() +
+                "O time visitante ficou " + String.format("%.2f", getPosseBolaTimeVisitanteAtaqueEmPorcentagem(jogo)) + "% do tempo de jogo no ataque" + System.lineSeparator();
 
     }
 
