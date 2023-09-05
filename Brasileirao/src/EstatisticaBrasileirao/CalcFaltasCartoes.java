@@ -2,39 +2,39 @@ package EstatisticaBrasileirao;
 
 public class CalcFaltasCartoes implements CalculoEstatisticas{
 
-    public int getTotalCartoesAmarelosTimeVisitante(Jogo jogo) {
+    private int getTotalCartoesAmarelosTimeVisitante(Jogo jogo) {
         return jogo.getCartoesAmarelosVisitante();
     }
 
-    public int getTotalCartoesVermelhosTimeVisitante(Jogo jogo) {
+    private int getTotalCartoesVermelhosTimeVisitante(Jogo jogo) {
         return jogo.getCartoesVermelhosVisitante();
     }
 
-    public int getTotalCartoesAmarelosTimeMandante(Jogo jogo) {
+    private int getTotalCartoesAmarelosTimeMandante(Jogo jogo) {
         return jogo.getCartoesAmarelosMandante();
     }
 
-    public int getTotalCartoesVermelhosTimeMandante(Jogo jogo) {
+    private int getTotalCartoesVermelhosTimeMandante(Jogo jogo) {
         return jogo.getCartoesVermelhosMandante();
     }
 
-    public int getTotalFaltasTimeVisitante(Jogo jogo) {
+    private int getTotalFaltasTimeVisitante(Jogo jogo) {
         return jogo.getFaltasTimeVisitante();
     }
 
-    public int getTotalFaltasTimeMandante(Jogo jogo) {
+    private int getTotalFaltasTimeMandante(Jogo jogo) {
         return jogo.getFaltasTimeMandante();
     }
 
-    public int getTotalFaltas(Jogo jogo) {
+    private int getTotalFaltas(Jogo jogo) {
         return jogo.getFaltasTimeVisitante() + jogo.getFaltasTimeMandante();
     }
 
-    public double getPorcentagemFaltasTimeVisitante(Jogo jogo) {
+    private double getPorcentagemFaltasTimeVisitante(Jogo jogo) {
         return ((double)jogo.getFaltasTimeVisitante() / getTotalFaltas(jogo)) * 100;
     }
 
-    public double getPorcentagemFaltasTimeMandante(Jogo jogo) {
+    private double getPorcentagemFaltasTimeMandante(Jogo jogo) {
         return ((double)jogo.getFaltasTimeMandante() / getTotalFaltas(jogo)) * 100;
     }
 

@@ -14,5 +14,4 @@ public class Main {
 		System.out.println(gerenciador.calcular(cgc, jogo));
 		System.out.println(gerenciador.calcular(ctj, jogo));
 	}
-
 }

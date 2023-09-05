@@ -2,7 +2,7 @@ package EstatisticaBrasileirao;
 
 public class CalcGolsChutes implements CalculoEstatisticas{
 
-    public int getTotalGols(Jogo jogo) {
+    private int getTotalGols(Jogo jogo) {
         return jogo.getGolsTimeMandante() + jogo.getGolsTimeVisitante();
     }
 
