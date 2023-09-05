@@ -1,4 +1,4 @@
-package br.poo.geradorestatisticasbr;
+package EstatisticaBrasileirao;
 
 public class Jogo {
 	
